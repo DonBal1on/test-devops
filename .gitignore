@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.gitignore.swp
 # C extensions
 *.so
 
