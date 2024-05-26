@@ -23,3 +23,13 @@ LICENSE
 
 # Ignore the Pipfile.lock file
 Pipfile.lock
+
+#Ignore the scripts folder
+backup
+
+#Ignore the nginx folder
+nginx
+
+#Ignore scripts
+initial_setup.sh
+
