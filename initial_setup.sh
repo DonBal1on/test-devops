@@ -65,5 +65,10 @@ check_success
 
 echo "Файл $NGINX_CONF успешно обновлен."
 
+# Запуск docker-compose
+echo "Запуск docker-compose..."
+docker-compose up -d
+check_success
+
 echo "Скрипт успешно выполнен."
 

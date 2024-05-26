@@ -17,56 +17,15 @@
 -  Pre-request:
 	-  АА record DNS , указывающая на адрес машины.
 	- Белый IP-адрес
+	- Собственно и сам домен
 
-1. Склонировать код проекта [FlaskBlog](https://github.com/DogukanUrker/flaskBlog/tree/main)
+1. Склонировать код проекта
 ```bash
-git clone https://github.com/DogukanUrker/flaskBlog.git
-```
-2. Установить certbot и его зависимости
-```bash
-sudo apt updat
-sudo apt install certbot
-sudo apt install python3-pip
-pip install --upgrade certbot urllib3 requests requests-toolbelt
+git clone https://github.com/DonBal1on/test-devops.git
 ```
 
-3. Получить сертификат для домена:
-```bash
-sudo certbot certonly --standalone -d domain.name.example
-```
-
-4. отредактировать `docker-compose.yml`
-```yml
-version: '3.8'
-services:
-  nginx:
-    image: nginx:latest
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-    networks:
-      - proxy_network
-    restart: always
-    
-
-  app:
-    image: dogukanurker/flaskBlogDevops:latest
-    expose:
-      - "5000"
-    networks:
-      - proxy_network 
-    restart: always
-    depends_on:
-      - nginx
-    build: .
-    volumes:
-      - ./db:/app/db
-
-networks:
-  proxy_network:
-    driver: bridge
-
-```
+2. Выполнить скрипт первоначальной настройки, что сделает скрипт?
+- Настроит сертификат
+- Изменит `nginx.conf` согласно указанному домену
+- Настроит и запустить firewall
+- Запустит `docker-compose.yml`
