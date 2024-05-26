@@ -67,7 +67,17 @@ echo "Файл $NGINX_CONF успешно обновлен."
 
 # Запуск docker-compose
 echo "Запуск docker-compose..."
-docker-compose up -d
+docker compose up -d
+check_success
+
+# Включение автозапуска службы docker
+echo "Enable systemctl docker"
+systemctl enable docker
+check_success
+
+# Статус службы docker
+echo "Статус службы docker"
+systemctl status docker
 check_success
 
 echo "Скрипт успешно выполнен."

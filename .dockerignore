@@ -32,4 +32,5 @@ nginx
 
 #Ignore scripts
 initial_setup.sh
+backup_and_restore.sh
 
