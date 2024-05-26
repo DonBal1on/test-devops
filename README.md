@@ -50,13 +50,9 @@ sudo docker compose up -d
   ```bash
   ./backup_and_restore.sh -b
   ```
-  
 - резервное восстановление из последнего бэкапа
-- Востановление, требует остановки контеейнера:
   ```bash
-  sudo docker compose down
   sudo ./backup_and_restore.sh -r
-  sudo docker compose up -d
   ```
 ### Рабочий экземпляр:
   https://test-devops.mefodiy.online
