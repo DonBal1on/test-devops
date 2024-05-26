@@ -32,3 +32,12 @@ git clone https://github.com/DonBal1on/test-devops.git
   ```bash
   ./initial_setup.sh
   ```
+3. Резервное копирование/восстановление:
+- резервное копирование:
+  ```bash
+  ./backup_and_restore.sh -b
+  ```
+- резервное восстановление из последнего бэкапа:
+  ```bash
+   ./backup_and_restore.sh -r
+  ```
