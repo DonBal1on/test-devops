@@ -38,6 +38,12 @@ git clone https://github.com/DonBal1on/test-devops.git
 ```bash
 sudo docker compose restart
 ```
+или
+```bash
+sudo docker compose down
+sudo docker compose up -d
+```
+
 3. Резервное копирование/восстановление:
 - резервное копирование:
   ```bash
