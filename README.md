@@ -55,3 +55,6 @@ sudo docker compose up -d
   ```bash
    ./backup_and_restore.sh -r
   ```
+
+  Рабочий экземпляр:
+  https://test-devops.mefodiy.online
