@@ -29,3 +29,6 @@ git clone https://github.com/DonBal1on/test-devops.git
 - Изменит `nginx.conf` согласно указанному домену
 - Настроит и запустить firewall
 - Запустит `docker-compose.yml`
+  ```bash
+  ./initial_setup.sh
+  ```
