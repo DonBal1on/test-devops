@@ -34,6 +34,10 @@ git clone https://github.com/DonBal1on/test-devops.git
   ```bash
   ./initial_setup.sh
   ```
+- Если сайт недоступен, или выдаёт ошибку:
+```bash
+sudo docker compose restart
+```
 3. Резервное копирование/восстановление:
 - резервное копирование:
   ```bash
