@@ -62,3 +62,22 @@ sudo docker compose up -d
   ```
 ### Рабочий экземпляр:
   https://test-devops.mefodiy.online
+
+### Порт ssh:
+- Добавить доплнительный порт ssh в /etc/ssh/sshd_config
+например `Port 49005`
+- Перезпустить ssshd
+```bash
+sudo systemctl restart sshd
+```
+-Разрешить входящий трафик на порт `Port 49005`
+```bash
+sudo ufw allow 49005/tcp 
+```
+-После проверки соединения ssh по порту `Port 49005`, закрыть доступ по порту 22
+```bash
+sudo ufw deny 22/tcp
+```
+### ГОТОВО
+
+  
