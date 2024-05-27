@@ -35,6 +35,9 @@ git clone https://github.com/DonBal1on/test-devops.git
   - При появлении GUI окон, ничего не меняя - соглашаться 
 - Настроит автозапуск решения после рестарта сервра
   ```bash
+  cd ~/test-devops
+  ```
+  ```bash
   sudo ./initial_setup.sh
   ```
 - Если сайт недоступен, или выдаёт ошибку:
