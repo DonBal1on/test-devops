@@ -32,7 +32,7 @@ git clone https://github.com/DonBal1on/test-devops.git
 - Запустит `docker-compose.yml`
 - Настроит автозапуск решения после рестарта сервра
   ```bash
-  ./initial_setup.sh
+  sudo ./initial_setup.sh
   ```
 - Если сайт недоступен, или выдаёт ошибку:
 ```bash
@@ -48,7 +48,7 @@ sudo docker compose up -d
 - Резервное восстановление/копирование можно выполнять на горячую, без остановки контейнера
 - резервное копирование:
   ```bash
-  ./backup_and_restore.sh -b
+  sudo ./backup_and_restore.sh -b
   ```
 - резервное восстановление из последнего бэкапа
   ```bash
