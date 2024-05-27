@@ -74,7 +74,7 @@ sudo systemctl restart sshd
 ```bash
 sudo ufw allow 49005/tcp 
 ```
--После проверки соединения ssh по порту `Port 49005`, закрыть доступ по порту 22
+-После проверки соединения ssh, по порту `Port 49005`, закрыть доступ по порту 22
 ```bash
 sudo ufw deny 22/tcp
 ```
